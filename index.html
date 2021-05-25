@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retos Semana8</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <center><p style="font-size: 30px;">Reto 1 - Semana 8</p></center>
+        </header>
+        <form class="row col-10 g-0 d-flex justify-content-center">
+            <div class="col-8">                            
+              <input type="text" class="form-control" id="txt_ingresarTarea" placeholder="Type your awesome task here...">
+            </div>            
+            <div class="col-auto">
+              <button class="btn" style="background-color:dimgray;color:white" id="btn_agregarTarea">Add Task</button>
+            </div>
+        </form>                          
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col" class="col-1"></th>
+                <th scope="col" class="col-6"></th>
+                <th scope="col" class="col-1 ps-1">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="prio" data-bs-toggle="dropdown">
+                            PRIO
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="prio">
+                            <li><button class="btn">MINOR</button></li>
+                            <li><button class="btn">MEDIUM</button></li>
+                            <li><button class="btn">MAJOR</button></li>                            
+                        </ul>
+                    </div>
+                </th>
+                <th scope="col" class="col-1 ps-1">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="urgency" data-bs-toggle="dropdown">
+                            URGENCY
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="urgency">
+                            <li><button class="btn">tomorrow</button></li>
+                            <li><button class="btn">today</button></li>
+                            <li><button class="btn">has time</button></li>                            
+                        </ul>
+                    </div>
+                </th>                
+                <th scope="col" class="col-1 ps-1">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="length" data-bs-toggle="dropdown">
+                            LENGTH
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="length">
+                            <li><button class="btn">10min</button></li>
+                            <li><button class="btn">30min</button></li>
+                            <li><button class="btn">1h</button></li>
+                            <li><button class="btn">break!</button></li>
+                        </ul>
+                    </div>
+                </th> 
+              </tr>
+            </thead>
+            <tbody id="tasks"> </tbody>
+          </table>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
