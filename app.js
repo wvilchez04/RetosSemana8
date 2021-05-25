@@ -44,6 +44,6 @@ let imprimirTareas = function (tasks, table_body_tareas) {
             </tr>`
     });
     table_body_tareas.innerHTML = htmlTasks;
-};
+}; 
 
 let lista_tareas = new ToDoList();
